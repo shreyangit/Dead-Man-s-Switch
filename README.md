@@ -1,9 +1,5 @@
-# Dead-Man's-Switch
-If the owner fails to signal activity by calling still_alive function within a specified block limit (10 in this case), the contract automatically transfers its balance to a pre-set beneficiary. Deployed on the Sepolia testnet.
 
-
-
-# Deadman's Switch Smart Contract
+# Deadman's Switch Smart Contract (README.MD MADE BY CHATGPT)
 
 This repository contains a Solidity smart contract that implements a Deadman's Switch mechanism. It ensures that if the owner of the contract becomes inactive (does not signal their presence within a defined block interval), the contract automatically transfers its balance to a designated beneficiary. This mechanism prevents funds from being lost due to the owner's incapacity.
 
@@ -38,23 +34,6 @@ This repository contains a Solidity smart contract that implements a Deadman's S
 
 - **`receive()`**:  
   Allows the contract to accept Ether directly.
-
----
-
-## Deployment
-
-1. **Prerequisites**:
-   - MetaMask wallet connected to the Goerli test network.
-   - Ether in your Goerli wallet for deployment and testing.
-
-2. **Steps**:
-   - Open the contract in [Remix IDE](https://remix.ethereum.org/).
-   - Compile the contract using Solidity version `^0.8.18`.
-   - Deploy the contract, specifying the beneficiary address and optional initial Ether balance.
-
-3. **Interacting**:
-   - Call `still_alive` periodically to update the owner's activity status.
-   - After inactivity, the beneficiary can call `withdraw` to claim the contract's balance.
 
 ---
 
