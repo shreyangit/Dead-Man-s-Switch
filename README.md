@@ -1,5 +1,5 @@
 
-# Deadman's Switch Smart Contract (README.MD MADE BY CHATGPT)
+# Deadman's Switch Smart Contract 
 
 This repository contains a Solidity smart contract that implements a Deadman's Switch mechanism. It ensures that if the owner of the contract becomes inactive (does not signal their presence within a defined block interval), the contract automatically transfers its balance to a designated beneficiary. This mechanism prevents funds from being lost due to the owner's incapacity.
 
